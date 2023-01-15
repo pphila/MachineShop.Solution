@@ -11,7 +11,7 @@
   <h3>There are no machines assembled yet.</h3>
 }
 
-@foreach (Machine machine in model)
+@foreach (Machine machine in Model)
 {
   <li>@Html.ActionLink($"{machine.Name}", "Details", new { id = machine.MachineId })</li>
 }

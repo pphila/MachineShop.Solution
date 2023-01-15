@@ -1,0 +1,17 @@
+@{
+  Layout="_Layout";
+}
+
+@model Factory.Models.Machine
+
+<h2>Dissasemble Machine?</h2>
+
+@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@using (Html.BeginForm())
+{
+  <input type="submit" value="Delete"/>
+}
+
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<p>@Html.ActionLink("Machines", "Index")</p>
+<p>@Html.ActionLink("Engineers", "Index", "Engineers")</p>
