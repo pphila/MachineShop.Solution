@@ -2,6 +2,13 @@
   Layout="_Layout";
 }
 
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Engineers", "Index")</li>
+  </ul>
+</nav>
+
 @model Factory.Models.Engineer
 
 <h1>Add Engineer</h1>
@@ -19,5 +26,4 @@
   <input type="submit" value="Add new Engineer" class="btn btn-default"/>
 }
 
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
-<p>@Html.ActionLink("Engineers", "Index")</p>
+

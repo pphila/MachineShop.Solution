@@ -2,6 +2,16 @@
   Layout="_Layout";
 }
 
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Machine", "Index")</li>
+    <li>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId })</li>
+    <li>@Html.ActionLink("Delete Machine", "Delete", new { id = Model.MachineId })</li>
+    <li>@Html.ActionLink("Add Engineer", "AddEngineer", new { id = Model.MachineId })</li>
+  </ul>
+</nav>
+
 @using Factory.Models
 @model Factory.Models.Machine
 
@@ -30,8 +40,3 @@ else
   </ul>
 }
 
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
-<p>@Html.ActionLink("Machine", "Index")</p>
-<p>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId })</p>
-<p>@Html.ActionLink("Delete Machine", "Delete", new { id = Model.MachineId })</p>
-<p>@Html.ActionLink("Add Engineer", "AddEngineer", new { id = Model.MachineId })</p>

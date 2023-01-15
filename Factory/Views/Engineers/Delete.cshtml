@@ -2,6 +2,14 @@
   Layout="_Layout";
 }
 
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Engineers", "Index")</li>
+    <li>@Html.ActionLink("Machines", "Index", "Machines")</li>
+  </ul>
+</nav>
+
 @model Factory.Models.Engineer
 
 <h2>Fire Engineer?</h2>
@@ -12,6 +20,4 @@
   <input type="submit" value="Delete"/>
 }
 
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
-<p>@Html.ActionLink("Engineers", "Index")</p>
-<p>@Html.ActionLink("Machines", "Index", "Machines")</p>
+

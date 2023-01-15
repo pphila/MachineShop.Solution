@@ -2,6 +2,12 @@
   Layout="_Layout";
 }
 
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Machines", "Index")</li>
+  </ul>
+</nav>
 
 @model Factory.Models.Machine
 
@@ -18,6 +24,3 @@
 
   <input type="submit" value="Save"/>
 }
-
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
-<p>@Html.ActionLink("Machines", "Index")</p>

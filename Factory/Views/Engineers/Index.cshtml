@@ -2,6 +2,14 @@
   Layout="_Layout";
 }
 
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Machines", "Index", "Machines")</li>
+    <li>@Html.ActionLink("Add Engineer", "Create")</li>
+  <ul>
+</nav>
+
 @using Factory.Models;
 
 <h1>Engineers</h1>
@@ -19,6 +27,3 @@ else
     }
   </ul>
 }
-
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
-<p>@Html.ActionLink("Add Engineer", "Create")</p>
