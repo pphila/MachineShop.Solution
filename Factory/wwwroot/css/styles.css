@@ -1,6 +1,6 @@
 * {
   font-family: 'Michroma', sans-serif;
-  
+  list-style-type: none;
 }
 
 body {
@@ -61,4 +61,38 @@ body {
 h1 {
   text-align: center;
   font-size: 5rem;
+}
+
+.engineer_list {
+  text-align: center;
+  font-size: 1.25rem;
+  min-width: 100px;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.engineer_list ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(48, 48, 48);
+}
+
+.machine_list {
+  text-align: center;
+  font-size: 1.25rem;
+  min-width: 100px;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.machine_list li a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(48, 48, 48);
 }
