@@ -1,0 +1,64 @@
+* {
+  font-family: 'Michroma', sans-serif;
+  
+}
+
+body {
+  background-color: rgba(57, 54, 54, 0.75);
+  background-image: url("../img/copper_kettles.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 40px;
+}
+
+/*navbar*/
+.navbar {
+  background-color: rgba(240, 255, 255, 0.855);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+}
+
+.navbar ul li {
+  font-size: 1.25rem;
+  padding: 10px 80px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+
+.intro_header {
+  background-color: rgba(245, 245, 245, 0.337);
+  padding: 10px;
+}
+
+.intro_info {
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
